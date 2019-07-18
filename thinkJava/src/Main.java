@@ -1,5 +1,6 @@
 import concurrence.*;
 import concurrency.CachedThreadPool;
+import concurrency.CallableDemo;
 import concurrency.FixedThreadPool;
 
 import java.util.concurrent.ExecutorService;
@@ -25,8 +26,9 @@ public class Main {
         //CachedThreadPool.execute();
 
         // 使用FiexedThreadPool
-        FixedThreadPool.execute();
+        //FixedThreadPool.execute();
 
+        CallableDemo.execute();
         System.out.println("waiting for liftoff");
     }
 }
