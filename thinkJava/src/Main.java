@@ -1,7 +1,4 @@
-import concurrence.*;
-import concurrency.CachedThreadPool;
-import concurrency.CallableDemo;
-import concurrency.FixedThreadPool;
+import concurrency.*;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -28,7 +25,15 @@ public class Main {
         // 使用FiexedThreadPool
         //FixedThreadPool.execute();
 
-        CallableDemo.execute();
+        //
+        // CallableDemo.execute();
+
+        //使用sleep来终止线程
+        // SleepingTask.execute();
+
+        //设置线程的优先级
+        SimplePriorities.execute();
+
         System.out.println("waiting for liftoff");
     }
 }

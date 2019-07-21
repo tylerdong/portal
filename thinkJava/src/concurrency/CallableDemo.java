@@ -11,6 +11,7 @@ import java.util.concurrent.Future;
  */
 public class CallableDemo {
     public static void execute() {
+        //工厂方法创建ExecutorService
         ExecutorService exec = Executors.newCachedThreadPool();
         ArrayList<Future<String>> result = new ArrayList<Future<String>>();
         for (int i = 0; i < 10; i++) {
