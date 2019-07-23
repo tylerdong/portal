@@ -32,7 +32,10 @@ public class Main {
         // SleepingTask.execute();
 
         //设置线程的优先级
-        SimplePriorities.execute();
+        //SimplePriorities.execute();
+
+        //后台线程
+        SimpleDeamons.execute();
 
         System.out.println("waiting for liftoff");
     }
