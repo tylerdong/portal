@@ -35,8 +35,10 @@ public class Main {
         //SimplePriorities.execute();
 
         //后台线程
-        SimpleDeamons.execute();
+        //SimpleDeamons.execute();
 
+        //
+        //DaemonFromFactory.execute();
         System.out.println("waiting for liftoff");
     }
 }
