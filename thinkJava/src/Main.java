@@ -39,6 +39,14 @@ public class Main {
 
         //
         //DaemonFromFactory.execute();
+
+        // 线程被设置成后台模式,派生的子线程也是后台线程.
+        //Daemon.execute();
+
+        // 简单情况下可以不实现Runnable,直接从Thread中继承
+        //SimpleThread.execute();
+
+        SelfManaged.execute();
         System.out.println("waiting for liftoff");
     }
 }
