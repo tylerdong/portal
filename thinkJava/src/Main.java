@@ -46,6 +46,7 @@ public class Main {
         // 简单情况下可以不实现Runnable,直接从Thread中继承
         //SimpleThread.execute();
 
+        //
         SelfManaged.execute();
         System.out.println("waiting for liftoff");
     }
