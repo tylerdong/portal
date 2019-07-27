@@ -47,7 +47,9 @@ public class Main {
         //SimpleThread.execute();
 
         //
-        SelfManaged.execute();
+        //SelfManaged.execute();
+
+        ThreadVariations.execute();
         System.out.println("waiting for liftoff");
     }
 }
