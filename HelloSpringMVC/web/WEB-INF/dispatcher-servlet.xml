@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="simpleUrlHandlerMapping"
+          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <!-- /hello路径的请求交给id为helloController的控制器处理 https://www.jianshu.com/p/91a2d0a1e45a-->
+                <prop key="/hello">helloController</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="helloControl" class="control.HelloController"></bean>
+</beans>
