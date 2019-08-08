@@ -49,7 +49,11 @@ public class Main {
         //
         //SelfManaged.execute();
 
-        ThreadVariations.execute();
+        //ThreadVariations.execute();
+
+        //ExceptionThread.execute();
+
+        CaptureUncaughtException.execute();
         System.out.println("waiting for liftoff");
     }
 }
