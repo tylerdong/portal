@@ -2,7 +2,7 @@ package controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+@org.springframework.stereotype.Controller
 public class HelloController {
 
     @RequestMapping("/hello")
@@ -11,5 +11,4 @@ public class HelloController {
         mav.addObject("message", "Hello Spring MVC");
         return mav;
     }
-
 }
