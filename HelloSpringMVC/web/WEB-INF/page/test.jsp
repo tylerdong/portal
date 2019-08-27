@@ -1,16 +1,47 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 秦飞飞
-  Date: 2019/8/26
-  Time: 23:01
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" import="java.util.*" isELIgnored="false" %>
 <html>
 <head>
-    <title>test</title>
+    <meta charset="utf-8">
+    <title>Spring MVC 传参方式</title>
 </head>
 <body>
-test
+<ul>
+    <li>
+        <h1>param</h1>
+        <form action="/paramFromRequest" role="form" method="post">
+            用户名：<input type="text" name="userName"><br/>
+            密码：<input type="text" name="password"><br/>
+            <input type="submit" value="提  交">
+        </form>
+    </li>
+    <li>
+        <h1>param</h1>
+        <form action="/param" role="form" method="post">
+            用户名：<input type="text" name="userName"><br/>
+            密码：<input type="text" name="password"><br/>
+            <input type="submit" value="提  交">
+        </form>
+    </li>
+    <li>
+        <h1>requestParam</h1>
+        <form action="/requestParam" role="form" method="post">
+            用户名：<input type="text" name="userName"><br/>
+            密码：<input type="text" name="password"><br/>
+            <input type="submit" value="提  交">
+        </form>
+    </li>
+    <li>
+        <h1>modelParam</h1>
+        <form action="/modelParam" role="form" method="post">
+            用户名：<input type="text" name="username"><br/>
+            密码：<input type="text" name="password"><br/>
+            <input type="submit" value="提  交">
+        </form>
+    </li>
+</ul>
+
+
+
 </body>
-</html>

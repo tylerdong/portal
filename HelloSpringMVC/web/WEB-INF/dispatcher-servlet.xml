@@ -17,11 +17,16 @@
     <!--</bean>-->
     <!--<bean id="helloController" class="controller.HelloController"></bean>-->
 
+    <!-- 防止用户直接访问jsp而带来的错误 -->
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/page/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <!-- 注解定义方式 -->
     <context:component-scan base-package="controller"/>
+
+    <!--文件上传-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 </beans>
