@@ -10,7 +10,7 @@ spring:
     cache: false
   mvc:
     view:
-      prefix: /webapp/WEB-INF/views/
+      prefix: /WEB-INF/views/
       suffix: .jsp
 student:
   name: "wwwwww"

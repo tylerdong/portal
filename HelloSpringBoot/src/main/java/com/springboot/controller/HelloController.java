@@ -1,4 +1,4 @@
-package com.springboot;
+package com.springboot.controller;
 
 //import javafx.scene.input.DataFormat;
 //import org.springframework.beans.factory.annotation.Autowired;
