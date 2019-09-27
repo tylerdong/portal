@@ -1,7 +1,8 @@
-package com.wmyskxz.springboot;
+package com.wmyskxz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class SpringbootApplication {
